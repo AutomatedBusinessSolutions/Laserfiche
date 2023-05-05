@@ -1,0 +1,36 @@
+1. Show and hide form elements
+    var elementToShow = document.getElementById("element-id-to-show");
+    var elementToHide = document.getElementById("element-id-to-hide");
+    var triggerElement = document.getElementById("trigger-element-id");
+
+    triggerElement.addEventListener("change", function() {
+      if (triggerElement.value === "some-value") {
+        elementToShow.style.display = "block";
+        elementToHide.style.display = "none";
+      } else {
+        elementToShow.style.display = "none";
+        elementToHide.style.display = "block";
+      }
+    });
+    
+2. Set default values for form elements
+    var element = document.getElementById("element-id");
+    element.value = "default-value";
+    
+3. Disable and enable form elements
+    var elementToDisable = document.getElementById("element-id-to-disable");
+    var elementToEnable = document.getElementById("element-id-to-enable");
+    var triggerElement = document.getElementById("trigger-element-id");
+
+    triggerElement.addEventListener("change", function() {
+      if (triggerElement.value === "some-value") {
+        elementToDisable.disabled = true;
+        elementToEnable.disabled = false;
+      } else {
+        elementToDisable.disabled = false;
+        elementToEnable.disabled = true;
+      }
+    });
+
+
+
