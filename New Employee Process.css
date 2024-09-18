@@ -1,0 +1,196 @@
+:root {
+--light: #FAF7F9;
+--dark: #232946;
+--accent1: #eebbc3;
+--accent2: #b8c1ec;
+--accent1b: #EB6677;
+--accent2b: #6077EC;
+--accent1c: #D70040;
+--accent2c: #EF2B7C;
+--text: #232946;
+--lighttext: #FCFCFC;
+}
+
+.center-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+  
+.card {
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #FCFCFC;
+    text-align: center;
+}
+
+
+.button1 {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: var(--accent1);
+    color: var(--text);
+    border: 1px dashed #121629;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.button1:hover {
+    background-color: var(--accent1b); 
+    border-color: var(--text); 
+    color: var(--lighttext);
+}
+
+.button1:active {
+    background-color: var(--accent1c) !important; 
+    border-color: var(--text); 
+    color: var(--lighttext);
+}
+  
+.button2 {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: var(--accent2);
+    color: var(--text);
+    border: 1px dashed #121629;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.button2:hover {
+    background-color: var(--accent2b); 
+    border-color: var(--text); 
+    color: var(--lighttext);
+}
+
+.button2:active {
+    background-color: var(--accent1b) !important; 
+    border-color: var(--text); 
+    color: var(--lighttext);
+}
+
+.no-hover:hover {
+    background-color: var(--accent1); 
+    border-color: #121629;
+    color: var(--text);
+}
+  
+.smol {
+  width: 50%;
+}
+  
+.mini {
+  width: 33%
+}
+  
+
+/* Overwrite LF formatting */
+
+.no-bullets {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+.no-bullets li {
+            margin: 10px 0; /* Optional: Adds space between list items */
+        }
+
+
+
+.three-per {
+  display: inline-grid;
+  padding: 0px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+} 
+
+.three-per .cf-field {
+  width: 100% !important;
+}
+
+.three-per .cf-small {
+  width: 100% !important;
+}
+
+.three-per .cf-label {
+  width: 100% !important;
+}
+
+.cf-section-header {
+  border-radius: 8px 8px 0px 0px;
+  background-color: var(--accent1);
+}
+
+.form-q.cf-section-header h2 {
+  color: var(--dark);
+/* Makes the check boxes toggles */
+.toggle-switch input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-switch input[type="checkbox"] + label {
+  position: relative;
+  margin-left: 15px;
+  display: inline-flex;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+.toggle-switch span {
+  display: inline-flex;
+  white-space: nowrap;
+  line-height: 34px;
+}
+
+.toggle-switch input[type="checkbox"] + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.toggle-switch input[type="checkbox"]:checked + label {
+  background-color: red;
+}
+
+.toggle-switch input[type="checkbox"]:checked + label::after {
+  transform: translateX(26px);
+}
+
+.toggle-switch input[type="checkbox"]:not(:checked) + label::after {
+  transform: translateX(0);
+}
+
+.toggle-switch label::before {
+  position: absolute;
+  color: #000;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.toggle-switch input[type="checkbox"]:checked + label::before {
+  color: #fff;
+}
+
+.Submit {
+  background-color: var(--accent1);
+}
